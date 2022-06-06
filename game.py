@@ -289,7 +289,7 @@ class World():
 					tile = (img, img_rect)
 					self.tile_list.append(tile)
 				if tile == 3:
-					enemy = Enemy(col_count * tile_size, row_count * tile_size + 15)
+					enemy = Enemy(col_count * tile_size, row_count * tile_size + 10)
 					enemy_group.add(enemy)
 				if tile == 4:
 					platform = Platform(col_count * tile_size, row_count * tile_size, 1, 0)
