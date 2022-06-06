@@ -40,13 +40,14 @@ blue = (0, 0, 255)
 #load images
 sun_img = pygame.image.load('img/sun.png')
 bg_img = pygame.image.load('img/sky.png')
-#restart_img = pygame.image.load('img/restart_btn.png')
+restart_img = pygame.image.load('img/restart_btn.png')
 start_img = pygame.image.load('img/start_btn.png')
 exit_img = pygame.image.load('img/exit_btn.png')
 
 #load sounds
-pygame.mixer.music.load('img/music.wav')
+pygame.mixer.music.load('img/Music11.wav')
 pygame.mixer.music.play(-1, 0.0, 5000)
+pygame.mixer.music.set_volume(0.3)
 coin_fx = pygame.mixer.Sound('img/coin.wav')
 coin_fx.set_volume(0.5)
 jump_fx = pygame.mixer.Sound('img/jump.wav')
@@ -431,7 +432,7 @@ world = World(world_data)
 
 
 #create buttons
-#restart_button = Button(screen_width // 2 - 50, screen_height // 2 + 100, restart_img)
+restart_button = Button(screen_width // 2 - 50, screen_height // 2 + 100, restart_img)
 start_button = Button(screen_width // 2 - 300, screen_height // 2, start_img)
 exit_button = Button(screen_width // 2 + 50, screen_height // 2, exit_img)
 
@@ -472,10 +473,9 @@ while run:
 
 		#if player has died
 		if game_over == -1:
-		#	if restart_button.draw():
-			#	world_data = []
-			#	world = reset_level(world_data)
-			#	game_over = 0
+			if restart_button.draw():
+				player.reset(100, screen_height - 130)
+				game_over = 0
 				score = 0
 
 		#if player has completed the level
@@ -489,10 +489,10 @@ while run:
 				game_over = 0
 			else:
 				draw_text('YOU WIN!', font, blue, (screen_width // 2) - 140, screen_height // 2)
-				
-					
-					
-					
+				#if restart_button.draw():
+					#level = 1
+					#reset level
+					#pass
 
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
