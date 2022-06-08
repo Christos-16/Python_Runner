@@ -15,7 +15,7 @@ screen_width = 750
 screen_height = 750
 
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption('Little Runner')
+pygame.display.set_caption('Runner')
 
 
 #define font
