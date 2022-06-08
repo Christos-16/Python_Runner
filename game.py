@@ -476,7 +476,7 @@ while run:
 			if restart_button.draw():
 				player.reset(100, screen_height - 130)
 				game_over = 0
-				score = 0
+				
 
 		#if player has completed the level
 		if game_over == 1:
