@@ -1,7 +1,3 @@
-It seems like you're looking for a README file for your Python project that uses the Pygame library. Here's a basic README template you can use:
-
----
-
 # Runner Game
 
 Runner Game is a simple 2D platformer game developed using Pygame, which was created in the context of the 5th semester course: Multimedia Technology.
