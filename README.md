@@ -59,4 +59,4 @@ In Runner Game, your goal is to navigate the player character through a series o
 Contributions are welcome! If you'd like to contribute to this project, please follow the standard GitHub fork and pull request workflow.
 
 ## License
-Get comfortable and play as much as you want with our game. Me and my partner https://github.com/HarisPol are looking forward to your feedback for improvement. 
+Get comfortable and play as much as you want with the game. Me and my partner https://github.com/HarisPol are looking forward to your feedback for improvement. 
